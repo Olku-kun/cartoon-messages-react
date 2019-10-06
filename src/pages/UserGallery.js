@@ -7,7 +7,7 @@ class UserGallery extends React.Component {
         return (
             
                 <Container>
-               kuku
+               bla bla bla
                 </Container>
            
         )

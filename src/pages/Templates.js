@@ -7,7 +7,7 @@ class Templates extends React.Component {
         return (
             
                 <Container>
-               kuku
+               kukukukukukuku
                 </Container>
            
         )

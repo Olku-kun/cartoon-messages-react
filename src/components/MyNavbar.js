@@ -5,14 +5,18 @@ class MyNavbar extends React.Component {
     render() {
         return (
             <Navbar bg="light" variant="light">
-                <Container>
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+               
+                <Navbar.Brand href="#/">Navbar</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#templates">Cartoon Templates</Nav.Link>
-                    <Nav.Link href="#gallery">User Gallery</Nav.Link>
+                    <Nav.Link href="#/">Home</Nav.Link>
+                    <Nav.Link href="#/templates">Cartoon Templates</Nav.Link>
+                    <Nav.Link href="#/gallery">User Gallery</Nav.Link>
+                    
                 </Nav>
-                </Container>
+                
+                </Navbar.Collapse>
             </Navbar>
         )
     }
