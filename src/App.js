@@ -8,7 +8,15 @@ import UserGallery from './pages/UserGallery';
 import Templates from './pages/Templates';
 
 
-function App() {
+class  App extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      templates: [],
+      userImages: []
+    }
+  }
+  render(){
   return (
     <Container>
       <MyNavbar />
@@ -17,15 +25,15 @@ function App() {
           <HomePage />
         </Route>
         <Route exact path="/gallery">
-          <UserGallery />
+          <UserGallery userImages= {this.state.userImages}/>
         </Route>
         <Route exact path="/templates">
-          <Templates />
+          <Templates templates = {this.state.templates}/>
         </Route>
       </Switch>
 
     </Container>
   );
 }
-
+}
 export default App;
