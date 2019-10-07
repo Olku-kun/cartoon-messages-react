@@ -11,7 +11,7 @@ class MyNavbar extends React.Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="#/">Home</Nav.Link>
-                    <Nav.Link href="#/templates">Cartoon Templates</Nav.Link>
+                    <Nav.Link href="#/templates">Template Gallery</Nav.Link>
                     <Nav.Link href="#/gallery">User Gallery</Nav.Link>
                     
                 </Nav>
