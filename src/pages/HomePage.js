@@ -7,7 +7,7 @@ class HomePage extends React.Component {
         return (
             
                 <Container>
-              hhhh
+              
                 </Container>
            
         )
