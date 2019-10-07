@@ -18,7 +18,7 @@ class  App extends React.Component {
   }
   render(){
   return (
-    <Container>
+    <Container className = "bg-light">
       <MyNavbar />
       <Switch>
         <Route exact path="/">

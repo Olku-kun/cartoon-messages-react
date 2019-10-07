@@ -11,7 +11,7 @@ class Templates extends React.Component {
         const tiles = templates.map(tile => <Col key={tile.id} lg = "3" md = "6"><Tile templates = {templates}/></Col>)
         return (
              <Container>
-               <h1>Choose your tamplate</h1>
+               <h1>Choose your template</h1>
                <Row>{tiles} </Row>
                 </Container>
            
