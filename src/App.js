@@ -6,13 +6,13 @@ import MyNavbar from './components/MyNavbar';
 import HomePage from './pages/HomePage';
 import UserGallery from './pages/UserGallery';
 import Templates from './pages/Templates';
-
+import jsonTemplates from '.data/templates.json'
 
 class  App extends React.Component {
   constructor(){
     super();
     this.state = {
-      templates: [],
+      templates: jsonTemplates,
       userImages: []
     }
   }
