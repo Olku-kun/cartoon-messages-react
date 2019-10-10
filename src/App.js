@@ -6,7 +6,7 @@ import MyNavbar from './components/MyNavbar';
 import HomePage from './pages/HomePage';
 import UserGallery from './pages/UserGallery';
 import Templates from './pages/Templates';
-import jsonTemplates from '.data/templates.json'
+import jsonTemplates from './data/templates';
 
 class  App extends React.Component {
   constructor(){
@@ -17,9 +17,11 @@ class  App extends React.Component {
     }
   }
   render(){
+    console.log(this.state);
   return (
     <Container className = "bg-light">
       <MyNavbar />
+      
       <Switch>
         <Route exact path="/">
           <HomePage />

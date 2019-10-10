@@ -7,11 +7,14 @@ class Templates extends React.Component {
         super(props);
     }
     render() {
-        const templates =  this.props.templates;
-        const tiles = templates.map(tile => <Col key={tile.id} lg = "3" md = "6"><Tile templates = {templates}/></Col>)
+        const templates1 =  this.props.templates;
+        var templates = Array(6).fill(templates1[0]);
+        console.log(templates);
+        const tiles = templates.map(template => <Col id={template.title} lg = "4" md = "6" sm = "1"><Tile template = {template}/></Col>);
+        console.log(tiles);
         return (
              <Container>
-               <h1>Choose your template</h1>
+               <h1 className= "text-center">Choose your template</h1>
                <Row>{tiles} </Row>
                 </Container>
            
