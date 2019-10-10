@@ -1,16 +1,18 @@
 import React from 'react';
 
-import { Mockup } from '../data/mockup/mockup.png';
+
 
 class Tile extends React.Component {
     constructor(props){
         super(props);
+        this.state = { navigateToId: null };
+        this.openMyMessage - this.openMyMessage.bind(this);
     }
     render() {
-        const templates =  this.props.templates;
+        const template =  this.props.template;
         return (
-             <div className = 'm-2'>
-                 <img src = {Mockup} />
+             <div id = {template.id} className = 'm-2'>
+                 <img src = {template.src} title = {template.title} />
                  </div>
            
         )
