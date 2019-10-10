@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import UserGallery from './pages/UserGallery';
 import Templates from './pages/Templates';
 import jsonTemplates from './data/templates';
+import MyMessage from './pages/MyMessage';
 
 class  App extends React.Component {
   constructor(){
@@ -31,6 +32,9 @@ class  App extends React.Component {
         </Route>
         <Route exact path="/templates">
           <Templates templates = {this.state.templates}/>
+        </Route>
+        <Route exact path = "/templates/:id">
+          <MyMessage templates = {this.state.templates}/>
         </Route>
       </Switch>
 
