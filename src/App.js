@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, match } from 'react-router-dom';
 import './App.css';
 import MyNavbar from './components/MyNavbar';
 import HomePage from './pages/HomePage';
@@ -9,37 +9,41 @@ import Templates from './pages/Templates';
 import jsonTemplates from './data/templates';
 import MyMessage from './pages/MyMessage';
 
-class  App extends React.Component {
-  constructor(){
+class App extends React.Component {
+  constructor() {
     super();
     this.state = {
       templates: jsonTemplates,
       userImages: []
     }
   }
-  render(){
+  render() {
     console.log(this.state);
-  return (
-    <Container className = "bg-light">
-      <MyNavbar />
-      
-      <Switch>
+    return (
+      <Container className="bg-light">
+        <MyNavbar />
+
+
         <Route exact path="/">
           <HomePage />
         </Route>
         <Route exact path="/gallery">
-          <UserGallery userImages= {this.state.userImages}/>
+          <UserGallery userImages={this.state.userImages} />
         </Route>
         <Route exact path="/templates">
-          <Templates templates = {this.state.templates}/>
+          <Templates templates={this.state.templates} />
         </Route>
-        <Route exact path = "/templates/:id">
-          <MyMessage templates = {this.state.templates}/>
-        </Route>
-      </Switch>
+        <Route exact path="/templates/:id" component={MyMessage } render={({
+          location,
+          match
+        }) => (
+            match = { match } 
+    )} />
 
-    </Container>
-  );
-}
+
+
+      </Container>
+    );
+  }
 }
 export default App;
