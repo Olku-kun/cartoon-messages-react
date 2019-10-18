@@ -3,7 +3,7 @@ class Canvas extends React.Component {
     constructor(props) {
       super(props);
       this.image = React.createRef();
-      this.message - this.message.bind(this)
+      this.message = this.message.bind(this)
     }
     componentDidMount() {
       this.message()
@@ -33,10 +33,11 @@ class Canvas extends React.Component {
     
     
     
-            <img ref={this.image} src="https://i.ibb.co/12WjwTf/mockup-test.png" className="hidden" />
+            <img ref={this.image} src={this.props.imgSrc} style={{display: 'none'}} />
             
           </div>
     
         )
       }
     }
+    export default Canvas
