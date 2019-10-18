@@ -1,43 +1,41 @@
 import React from 'react';
 class Canvas extends React.Component {
     constructor(props) {
-      super(props);
-      this.image = React.createRef();
-      this.message = this.message.bind(this)
+        super(props);
+        this.image = React.createRef();
+        this.message = this.message.bind(this)
     }
     componentDidMount() {
-      this.message()
+        this.message()
     }
     componentDidUpdate() {
-      this.message()
+        this.message()
     }
     message() {
-      console.log(this.props);
-      // const { text } = this.props;
-      const img = this.image.current;
-      const ctx = this.refs.canvas.getContext("2d");
-      ctx.drawImage(img, 0, 0);
-      ctx.fillStyle = "tomato"
-      ctx.font = "18px Mansalva"
-     
-      ctx.fillText(this.props.canvastext, 150, 50)
+        console.log(this.props);
+        // const { text } = this.props;
+        const img = this.image.current;
+        const ctx = this.refs.canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+        ctx.fillStyle = "tomato"
+        ctx.font = "18px Mansalva"
+
+        ctx.fillText(this.props.canvastext, 150, 50)
     }
     render() {
-       
+
         return (
-          <div>
-            <canvas ref='canvas'
-              width={300}
-              height={300}
-            />
-    
-    
-    
-            <img ref={this.image} src={this.props.imgSrc} style={{display: 'none'}} />
-            
-          </div>
-    
+            <div>
+                <canvas ref='canvas'
+                    width={300}
+                    height={300}
+                />
+
+                <img ref={this.image} src={this.props.imgSrc} style={{ display: 'none' }} />
+
+            </div>
+
         )
-      }
     }
-    export default Canvas
+}
+export default Canvas
