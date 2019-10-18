@@ -14,10 +14,10 @@ class MyMessage extends React.Component {
         console.log(this.state.templates)
     }
 
-componentDidMount(){
-   var a =  this.props.match.params.id;
-   console.log(this.a)
-}
+// componentDidMount(){
+//    var a =  this.props.match.params.id;
+//    console.log(this.a)
+// }
     render() {
 const { myTemplate, templates } = this.state;
 let selectedTemp = templates.find ( (temp) =>{
@@ -30,7 +30,7 @@ let selectedTemp = templates.find ( (temp) =>{
             <div>
                 <img src = {selectedTemp.src}/>
                 shalom {selectedTemp.title}
-            {this.a}
+           
             </div>
         )
     }
