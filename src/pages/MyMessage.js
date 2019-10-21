@@ -49,12 +49,11 @@ class MyMessage extends React.Component {
             <Container>
                 {/* <img src = {selectedTemp.src}/> */}
                 shalom {selectedTemp.title}
+                <div  className="mx-auto" style={{width:"500px"}}>
                 <Canvas canvastext={this.state.bubbleText} imgSrc={selectedTemp.src} />
                 <textarea rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxlength="75" />
                 {/* <button onClick={this.handleClick}>Submit</button> */}
                 <ButtonToolbar>
-
-
                     <Button className="mr-2" variant="success" size="sm" onClick={this.handleClick} >
                         Submit
   </Button>
@@ -65,6 +64,7 @@ class MyMessage extends React.Component {
                         Clear
     </Button>
                 </ButtonToolbar>
+                </div>
             </Container>
         )
     }
