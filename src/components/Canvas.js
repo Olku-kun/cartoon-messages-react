@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 class Canvas extends React.Component {
     constructor(props) {
         super(props);
@@ -13,38 +14,40 @@ class Canvas extends React.Component {
         this.message()
     }
     message() {
+        const {x, y} = this.props;
         console.log(this.props);
-        const canvas = this.canvas.current
+        const canvas = this.canvas.current;
         const img = this.image.current;
-        // img.origin = 'anonymous';
-        // img.src="https://i.ibb.co/12WjwTf/mockup-test.png";
         const ctx = canvas.getContext("2d");
-        
-        ctx.drawImage(img, 0, 0);
-        ctx.fillStyle = "tomato"
-        ctx.font = "18px Mansalva"
 
-        ctx.fillText(this.props.canvastext, 150, 50)
+        ctx.drawImage(img, 0, 0);
+        ctx.fillStyle = "#333";
+        ctx.font = "18px Mansalva";
+        // var x = 150, y = 50;
+        ctx.fillText(this.props.canvastext, x, y)
     }
-    downloadImg = (e)=> {
+    downloadImg = (e) => {
         var canvas = this.canvas.current;
         var image = canvas.toDataURL('image/jpg');
         e.target.href = image;
-        console.log(image)
-        
-      }
+
+
+    }
     render() {
 
         return (
             <div>
+                <Button  className = " mb-2" variant="secondary" download="image.jpg" href="" onClick={this.downloadImg} crossOrigin="anonymous" block size="lg">Download </Button>
                 <canvas ref={this.canvas}
                     width={300}
                     height={300}
                 />
 
                 <img ref={this.image} src={this.props.imgSrc} style={{ display: 'none' }} />
-                <a download = "image.jpg" href="" onClick={this.downloadImg} crossOrigin="anonymous">Download </a>
 
+                {/* <Button className="mr-2" variant="info" size="sm">
+                        Download
+    </Button> */}
             </div>
 
         )

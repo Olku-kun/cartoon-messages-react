@@ -2,22 +2,30 @@
     {
         "src": "images/mockup-test.png",
         "title": "test1",
-        "alt": "mockup-test"
+        "alt": "mockup-test",
+        "x": "150",
+        "y": "40"
     },
     {
         "src": "https://i.ibb.co/12WjwTf/mockup-test.png",
         "title": "test2",
-        "alt": "mockup-test"
+        "alt": "mockup-test",
+        "x": "200",
+        "y": "30"
     },
     {
         "src": "https://i.ibb.co/12WjwTf/mockup-test.png",
         "title": "test3",
-        "alt": "mockup-test"
+        "alt": "mockup-test",
+        "x": "100",
+        "y": "60"
     },
     {
         "src": "https://i.ibb.co/12WjwTf/mockup-test.png",
         "title": "test4",
-        "alt": "mockup-test"
+        "alt": "mockup-test",
+        "x": "150",
+        "y": "40"
     },
     {
         "src": "https://i.ibb.co/12WjwTf/mockup-test.png",

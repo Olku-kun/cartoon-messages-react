@@ -11,7 +11,8 @@ class MyMessage extends React.Component {
             templates: jsonTemplates,
             myTemplate: this.props.match.params.id,
             text: '',
-            bubbleText: 'Your text here'
+            bubbleText: 'Your text here',
+
         };
         console.log(this.props.match.params.id);
         console.log(this.state.templates)
@@ -47,23 +48,22 @@ class MyMessage extends React.Component {
 
         return (
             <Container>
-                {/* <img src = {selectedTemp.src}/> */}
+
                 shalom {selectedTemp.title}
-                <div  className="mx-auto" style={{width:"500px"}}>
-                <Canvas canvastext={this.state.bubbleText} imgSrc={selectedTemp.src} />
-                <textarea rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxlength="75" />
-                {/* <button onClick={this.handleClick}>Submit</button> */}
-                <ButtonToolbar>
-                    <Button className="mr-2" variant="success" size="sm" onClick={this.handleClick} >
-                        Submit
+                <div className="mx-auto" style={{ width: "300px" }}>
+                    <Canvas canvastext={this.state.bubbleText} x = {selectedTemp.x} y = {selectedTemp.y} imgSrc={selectedTemp.src} />
+                    <div className="d-flex justify-content-center">
+                        <textarea className = "m-4" wrap="hard" rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="75" />
+                    </div>
+                    <ButtonToolbar>
+                        <Button className="mr-2" variant="success" size="lg" onClick={this.handleClick} >
+                            Submit
   </Button>
-                    <Button className="mr-2" variant="info" size="sm">
-                        Download
+
+                        <Button className="ml-auto" variant="danger" size="lg" onClick={this.deleteMessage}>
+                            Clear
     </Button>
-                    <Button className="mr-2" variant="danger" size="sm" onClick={this.deleteMessage}>
-                        Clear
-    </Button>
-                </ButtonToolbar>
+                    </ButtonToolbar>
                 </div>
             </Container>
         )

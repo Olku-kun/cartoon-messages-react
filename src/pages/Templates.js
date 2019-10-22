@@ -10,7 +10,7 @@ class Templates extends React.Component {
         const templates = this.props.templates;
 
         console.log(templates);
-        const tiles = templates.map(template => <Col id={template.title} lg="4" md="6" sm="1"><Tile template={template} /></Col>);
+        const tiles = templates.map((template, i) => <Col  key = {i} id={template.title} lg="4" md="6" sm="1"><Tile template={template} /></Col>);
         console.log(tiles);
         return (
             <Container>
