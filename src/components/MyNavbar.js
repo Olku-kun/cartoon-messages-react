@@ -4,7 +4,7 @@ import { Nav, Navbar, Container } from 'react-bootstrap';
 class MyNavbar extends React.Component {
     render() {
         return (
-            <Navbar bg="light" variant="light">
+            <Navbar className = "myNavbar" bg="light" variant="light">
 
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

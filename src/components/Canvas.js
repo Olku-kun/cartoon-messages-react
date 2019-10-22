@@ -23,21 +23,22 @@ class Canvas extends React.Component {
         ctx.drawImage(img, 0, 0);
         ctx.fillStyle = "#333";
         ctx.font = "18px Mansalva";
-       
+
         ctx.fillText(this.props.canvastext, x, y)
     }
     downloadImg = (e) => {
         var canvas = this.canvas.current;
         var image = canvas.toDataURL('image/jpg');
         e.target.href = image;
-
+        console.log(image);
 
     }
     render() {
 
         return (
             <div>
-                <Button className=" mb-2" variant="secondary" download="image.jpg" href="" onClick={this.downloadImg} crossOrigin="anonymous" block size="lg">Download </Button>
+                <a className=" mb-2" variant="secondary" download="image.jpg" href="" onClick={this.downloadImg} crossOrigin="anonymous"  size="lg">Download </a>
+
                 <canvas ref={this.canvas}
                     width={300}
                     height={300}
