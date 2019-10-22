@@ -47,7 +47,7 @@ class MyMessage extends React.Component {
         })
 
         return (
-            <Container>
+            <Container className = "base">
 
                 shalom {selectedTemp.title}
                 <div className="mx-auto" style={{ width: "300px" }}>

@@ -6,7 +6,7 @@ class HomePage extends React.Component {
     render() {
         return (
 
-            <Container>
+            <Container className = "base">
                 <div>
                 <h1>Steps to create your cartoon message </h1>
                 <ul>

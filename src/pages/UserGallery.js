@@ -6,7 +6,7 @@ class UserGallery extends React.Component {
     render() {
         return (
             
-                <Container>
+                <Container className = "base">
                bla bla bla
                 </Container>
            

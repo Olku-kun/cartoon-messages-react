@@ -14,7 +14,7 @@ class Canvas extends React.Component {
         this.message()
     }
     message() {
-        const {x, y} = this.props;
+        const { x, y } = this.props;
         console.log(this.props);
         const canvas = this.canvas.current;
         const img = this.image.current;
@@ -23,7 +23,7 @@ class Canvas extends React.Component {
         ctx.drawImage(img, 0, 0);
         ctx.fillStyle = "#333";
         ctx.font = "18px Mansalva";
-        // var x = 150, y = 50;
+       
         ctx.fillText(this.props.canvastext, x, y)
     }
     downloadImg = (e) => {
@@ -37,7 +37,7 @@ class Canvas extends React.Component {
 
         return (
             <div>
-                <Button  className = " mb-2" variant="secondary" download="image.jpg" href="" onClick={this.downloadImg} crossOrigin="anonymous" block size="lg">Download </Button>
+                <Button className=" mb-2" variant="secondary" download="image.jpg" href="" onClick={this.downloadImg} crossOrigin="anonymous" block size="lg">Download </Button>
                 <canvas ref={this.canvas}
                     width={300}
                     height={300}
@@ -45,9 +45,7 @@ class Canvas extends React.Component {
 
                 <img ref={this.image} src={this.props.imgSrc} style={{ display: 'none' }} />
 
-                {/* <Button className="mr-2" variant="info" size="sm">
-                        Download
-    </Button> */}
+
             </div>
 
         )

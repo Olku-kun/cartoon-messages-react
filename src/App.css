@@ -2,7 +2,9 @@
   text-align: center;
 }
 
-
+.base {
+  min-height: 100vh;
+}
 .App-header {
   background-color: rgb(245, 240, 226);
   min-height: 100vh;
