@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Switch, Route, match } from 'react-router-dom';
+import {Route, } from 'react-router-dom';
 import './App.css';
 import MyNavbar from './components/MyNavbar';
 import HomePage from './pages/HomePage';
@@ -14,8 +14,12 @@ class App extends React.Component {
     super();
     this.state = {
       templates: jsonTemplates,
-      userImages: []
+      userImages: [],
+      newImg: {}
     }
+  }
+  addUserImage = (imgdata, author) => {
+
   }
   render() {
     console.log(this.state);

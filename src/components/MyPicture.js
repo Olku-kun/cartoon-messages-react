@@ -2,9 +2,9 @@ import React from 'react';
 
 
 class MyPicture extends React.Component {
-    constructor(props){
-        super(props);
-    }
+    // constructor(props){
+    //     super(props);
+    // }
     render() {
         const picture = this.props.picture;
         return(

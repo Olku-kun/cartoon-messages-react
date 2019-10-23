@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRouteMatch, params, match } from 'react-router-dom';
 import { Button, ButtonToolbar, Container } from 'react-bootstrap';
 import jsonTemplates from '../data/templates';
 import Canvas from '../components/Canvas';
@@ -41,20 +40,21 @@ class MyMessage extends React.Component {
     render() {
         const { myTemplate, templates } = this.state;
         let selectedTemp = templates.find((temp) => {
-            if (temp.title == myTemplate) {
+            if (temp.title === myTemplate) {
                 return temp;
             }
         })
 
         return (
-            <Container className = "base">
+            <Container className="base">
 
                 shalom {selectedTemp.title}
                 <div className="mx-auto" style={{ width: "300px" }}>
-                    <Canvas canvastext={this.state.bubbleText} x = {selectedTemp.x} y = {selectedTemp.y} imgSrc={selectedTemp.src} />
+                    <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} />
                     <div className="d-flex justify-content-center">
-                        <textarea className = "m-4" wrap="hard" rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="75" />
+                        <textarea className="m-4" wrap="hard" rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="75" />
                     </div>
+                    
                     <ButtonToolbar>
                         <Button className="mr-2" variant="success" size="lg" onClick={this.handleClick} >
                             Submit

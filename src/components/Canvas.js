@@ -15,7 +15,6 @@ class Canvas extends React.Component {
     }
     message() {
         const { x, y } = this.props;
-        console.log(this.props);
         const canvas = this.canvas.current;
         const img = this.image.current;
         const ctx = canvas.getContext("2d");
@@ -26,10 +25,17 @@ class Canvas extends React.Component {
 
         ctx.fillText(this.props.canvastext, x, y)
     }
+
+    // wrapText(x, y, z) {
+
+    // }
+
+
     downloadImg = (e) => {
         var canvas = this.canvas.current;
         var image = canvas.toDataURL('image/jpg');
         e.target.href = image;
+        console.log(typeof image);
         console.log(image);
 
     }
@@ -37,14 +43,14 @@ class Canvas extends React.Component {
 
         return (
             <div>
-                <a className=" mb-2" variant="secondary" download="image.jpg" href="" onClick={this.downloadImg} crossOrigin="anonymous"  size="lg">Download </a>
+                <a className=" mb-2" variant="secondary" download="image.jpg" href="#" onClick={this.downloadImg} crossOrigin="anonymous" alt="" size="lg">Download </a>
 
                 <canvas ref={this.canvas}
                     width={300}
                     height={300}
                 />
 
-                <img ref={this.image} src={this.props.imgSrc} style={{ display: 'none' }} />
+                <img ref={this.image} src={this.props.imgSrc} alt = "" style={{ display: 'none' }} />
 
 
             </div>

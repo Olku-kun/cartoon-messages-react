@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, NavLink } from 'react-router-dom';
+import { Redirect, } from 'react-router-dom';
 
 
 class Tile extends React.Component {
@@ -17,10 +17,9 @@ class Tile extends React.Component {
             navigateToId: this.props.template.title,
             selectedTemplate: this.props.template
         });
-        
+
     }
     render() {
-        console.log(this.state)
         if (this.state.navigateToId != null) {
             return (
                 <Redirect to={'/templates/' + this.state.navigateToId} />

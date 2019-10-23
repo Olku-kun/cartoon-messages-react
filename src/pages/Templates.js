@@ -3,9 +3,9 @@ import Tile from '../components/Tile'
 import { Container, Row, Col } from 'react-bootstrap';
 
 class Templates extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
     render() {
         const templates = this.props.templates;
 
