@@ -56,10 +56,10 @@ class MyMessage extends React.Component {
                     </div>
 
                     <ButtonToolbar className ="d-flex justify-content-start">
-                        <Button className="m-2" variant="success" size="lg" onClick={this.handleClick} >
+                        <Button className="m-2" variant="success" size="sm" onClick={this.handleClick} >
                             Submit
   </Button>
-                        <Button className="m-2" variant="danger" size="lg" onClick={this.deleteMessage}>
+                        <Button className="m-2" variant="danger" size="sm" onClick={this.deleteMessage}>
                             Clear
     </Button>
                     </ButtonToolbar>

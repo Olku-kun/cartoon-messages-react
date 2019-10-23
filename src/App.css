@@ -16,3 +16,7 @@
   color: rgb(66, 65, 65);
 }
 
+  .gallery-img {
+    width: 300px;
+    height: 300px
+  }

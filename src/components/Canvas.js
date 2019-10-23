@@ -36,7 +36,6 @@ class Canvas extends React.Component {
         var canvas = this.canvas.current;
         var image = canvas.toDataURL('image/jpg');
         e.target.href = image;
-        console.log(typeof image);
         console.log(image);
 
     }
@@ -45,15 +44,15 @@ class Canvas extends React.Component {
         return (
             <Container>
                 <Row>
-                    <Col md="auto">
+                    <Col >
                         <canvas ref={this.canvas}
-                            width={300}
-                            height={300}
+                            width={400}
+                            height={400}
                         />
                     </Col>
-                    <Col xs lg="3">
+                    <Col >
                         <h4>Enter your name</h4>
-                        <input type = "text" placeholder = "Anonymous" ref = {this.author} />
+                        <input type="text" placeholder="Anonymous" ref={this.author} />
                         <a className=" mb-2" variant="secondary" download="image.jpg" href="#" onClick={this.downloadImg} crossOrigin="anonymous" alt="" size="lg"><h4>Download </h4></a>
                         <img ref={this.image} src={this.props.imgSrc} alt="" style={{ display: 'none' }} />
                     </Col>

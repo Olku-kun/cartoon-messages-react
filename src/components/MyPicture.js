@@ -9,7 +9,7 @@ class MyPicture extends React.Component {
         const picture = this.props.picture;
         return(
             <div  id={picture.title} className='m-2'>
-            <img src={picture.src} title={picture.title} alt={picture.alt} />
+            <img className = "gallery-img" src={picture.src} title={picture.title} alt={picture.alt} />
         </div>
         )
     }
