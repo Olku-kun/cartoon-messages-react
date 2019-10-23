@@ -15,12 +15,17 @@ class App extends React.Component {
     this.state = {
       templates: jsonTemplates,
       userImages: [],
-      newImg: {}
+      newImages: {}
     }
   }
-  addUserImage = (imgdata, author) => {
-
-  }
+  addUserImage = () => {
+    const authorname = this.state.newImages.author;
+    const imgData = this.state.newImages.image;
+const newPic = { author: authorname,
+  pic: imgData}
+  this.setState({newImages: this.newImages.push(newPic)})
+}
+  
   render() {
     console.log(this.state);
     return (
