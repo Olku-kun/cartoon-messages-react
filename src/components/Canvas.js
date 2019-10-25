@@ -15,22 +15,40 @@ class Canvas extends React.Component {
         this.message()
     }
     message() {
-        const { x, y } = this.props;
-        const canvas = this.canvas.current;
         const img = this.image.current;
+        const canvas = this.canvas.current;
         const ctx = canvas.getContext("2d");
-
+        
         ctx.drawImage(img, 0, 0);
+        const maxWidth = 190;
+        const lineHeight = 20;
+        var x = parseInt(this.props.x);
+        var y =parseInt(this.props.y);
+       
         ctx.fillStyle = "#333";
-        ctx.font = "24px Mansalva";
-
-        ctx.fillText(this.props.canvastext, x, y)
+        ctx.font = "24px Caveat";
+        const text = this.props.canvastext;
+        this.wrapText(ctx, lineHeight, maxWidth, x, y, text);
     }
-
-    // wrapText(x, y, z) {
-
-    // }
-
+    wrapText = (ctx, lineHeight, maxWidth, x, y, text)=>{
+        
+        var words = text.split(' ');
+        var line = '';
+        for (var n = 0; n < words.length; n++) {
+          var testLine = line + words[n] + ' ';
+          var metrics = ctx.measureText(testLine);
+          var testWidth = metrics.width;
+          if (testWidth > maxWidth && n>0) {
+            ctx.fillText(line, x, y);
+            line = words[n] + ' ';
+            y += lineHeight;
+          }
+          else {
+            line = testLine;
+          }
+      }
+      ctx.fillText(line, x, y);
+        }
 
     downloadImg = (e) => {
         var canvas = this.canvas.current;
