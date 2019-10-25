@@ -22,7 +22,7 @@ class Canvas extends React.Component {
 
         ctx.drawImage(img, 0, 0);
         ctx.fillStyle = "#333";
-        ctx.font = "18px Mansalva";
+        ctx.font = "24px Mansalva";
 
         ctx.fillText(this.props.canvastext, x, y)
     }

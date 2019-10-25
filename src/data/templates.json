@@ -1,29 +1,29 @@
 [
     {
-        "src": "images/mockup-test.png",
-        "title": "test1",
-        "alt": "mockup-test",
+        "src": "images/cartoon-man-with-gift-box.png",
+        "title": "cartoon man with gift box",
+        "alt": "cartoon man with gift box",
         "x": "150",
         "y": "40"
     },
     {
-        "src": "https://i.ibb.co/12WjwTf/mockup-test.png",
-        "title": "test2",
-        "alt": "mockup-test",
+        "src": "images/cartoon-angry-woman.png",
+        "title": "cartoon angry woman",
+        "alt": "cartoon angry woman",
         "x": "200",
-        "y": "30"
+        "y": "60"
     },
     {
-        "src": "https://i.ibb.co/12WjwTf/mockup-test.png",
-        "title": "test3",
-        "alt": "mockup-test",
+        "src": "images/primitive-thinker.png",
+        "title": "primitive thinker",
+        "alt": "primitive thinker",
         "x": "100",
         "y": "60"
     },
     {
-        "src": "https://i.ibb.co/12WjwTf/mockup-test.png",
-        "title": "test4",
-        "alt": "mockup-test",
+        "src": "images/cartoon-Einstein.png",
+        "title": "cartoon Einstein",
+        "alt": "cartoon Einstein",
         "x": "150",
         "y": "40"
     },
