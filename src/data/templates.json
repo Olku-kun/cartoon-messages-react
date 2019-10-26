@@ -1,11 +1,12 @@
 [
     {
-        "src": "images/cartoon-man-with-gift-box.png",
-        "title": "cartoon man with gift box",
-        "alt": "cartoon man with gift box",
+        "src": "images/cartoon-Einstein.png",
+        "title": "cartoon Einstein",
+        "alt": "cartoon Einstein",
         "x": "150",
         "y": "40"
     },
+    
     {
         "src": "images/cartoon-angry-woman.png",
         "title": "cartoon angry woman",
@@ -14,27 +15,29 @@
         "y": "60"
     },
     {
+        "src": "images/cartoon-man-with-gift-box.png",
+        "title": "cartoon man with gift box",
+        "alt": "cartoon man with gift box",
+        "x": "150",
+        "y": "40"
+    },
+    
+    
+    {
+        "src": "images/ancient-Greek-philosopher.png",
+        "title": "ancient Greek philosopher",
+        "alt": "ancient Greek philosopher"
+    },
+    {
+        "src": "images/ancient-greek-soldier.png",
+        "title": "ancient Greek soldier",
+        "alt": "ancient Greek soldier"
+    },
+    {
         "src": "images/primitive-thinker.png",
         "title": "primitive thinker",
         "alt": "primitive thinker",
         "x": "100",
         "y": "60"
-    },
-    {
-        "src": "images/cartoon-Einstein.png",
-        "title": "cartoon Einstein",
-        "alt": "cartoon Einstein",
-        "x": "150",
-        "y": "40"
-    },
-    {
-        "src": "https://i.ibb.co/12WjwTf/mockup-test.png",
-        "title": "test5",
-        "alt": "mockup-test"
-    },
-    {
-        "src": "https://i.ibb.co/12WjwTf/mockup-test.png",
-        "title": "test6",
-        "alt": "mockup-test"
     }
 ]

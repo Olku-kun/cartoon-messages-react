@@ -66,6 +66,9 @@ class Canvas extends React.Component {
                         <canvas ref={this.canvas}
                             width={400}
                             height={400}
+                            onClick={e => {
+                               //temporary function to get coordinates
+                    console.log(e.clientX, e.clientY)          }}
                         />
                     </Col>
                     <Col >

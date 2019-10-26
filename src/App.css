@@ -6,11 +6,11 @@
   min-height: 100vh;
 }
 .myNavbar {
-  background-color: rgb(245, 240, 226);
+  background-color: rgb(247, 235, 202);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   /* justify-content: center; */
   font-size: calc(10px + 1.5vmin);
   color: rgb(66, 65, 65);
