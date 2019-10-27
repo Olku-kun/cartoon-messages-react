@@ -50,7 +50,7 @@ class MyMessage extends React.Component {
 
                 shalom {selectedTemp.title}{this.props.stam}
                 <div>
-                    <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} />
+                    <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} addUserImage = {this.addUserImage}/>
                     <div >
                         <textarea className="m-4"  rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="120" />
                     </div>

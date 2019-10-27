@@ -90,7 +90,7 @@ class Canvas extends React.Component {
                     <Col >
                         <h4>Enter your name</h4>
                         <input type="text" placeholder="Anonymous" value={this.state.author} onChange={this.handleChange} />
-                        <Button className="m-2" variant="success" size="lg" type="button">Submit to Gallery</Button>
+                        <Button className="m-2" variant="success" size="lg" type="button" onClick={this.handleSubmit}>Submit to Gallery</Button>
                         <a className=" mb-2" variant="secondary" download="image.jpg" href="#" onClick={this.downloadImg} crossOrigin="anonymous" alt="" ><h4>Download </h4></a>
 
                     </Col>

@@ -6,8 +6,8 @@ class MyPicture extends React.Component {
     render() {
         const picture = this.props.picture;
         return(
-            <div  id={picture.title} className='m-2'>
-            <img className = "gallery-img" src={picture.src} title={picture.title} alt={picture.alt} />
+            <div  className='m-2'>
+            <img className = "gallery-img" src={picture.image} title={picture.author} alt={picture.alt} />
         </div>
         )
     }
