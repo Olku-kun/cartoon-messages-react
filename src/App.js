@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import {Route, } from 'react-router-dom';
+import { Route, } from 'react-router-dom';
 import './App.css';
 import MyNavbar from './components/MyNavbar';
 import HomePage from './pages/HomePage';
@@ -21,11 +21,13 @@ class App extends React.Component {
   addUserImage = () => {
     const authorname = this.state.newImages.author;
     const imgData = this.state.newImages.image;
-const newPic = { author: authorname,
-  pic: imgData}
-  this.setState({newImages: this.newImages.push(newPic)})
-}
-  
+    const newPic = {
+      author: authorname,
+      pic: imgData
+    }
+    this.setState({ newImages: this.newImages.concat(newPic) })
+  }
+
   render() {
     console.log(this.state);
     return (
@@ -37,17 +39,17 @@ const newPic = { author: authorname,
           <HomePage />
         </Route>
         <Route exact path="/gallery">
-          <UserGallery userImages={this.state.userImages} />
+          <UserGallery userImages={this.state.userImages} newImages = {this.state.newImages} />
         </Route>
         <Route exact path="/templates">
           <Templates templates={this.state.templates} />
         </Route>
-        <Route exact path="/templates/:id" component={MyMessage } render={({
-          location,
-          match
-        }) => (
-            match = { match } 
-    )} />
+        {/* <Route exact path="/templates/:id"
+         component={MyMessage}
+          render={( match ) => (
+           match = { match }  ) } /> */}
+         <Route exact path="/templates/:id" render = {props => <MyMessage {...props} addUserImage = {this.addUserImage}/>} /> 
+         
 
 
 

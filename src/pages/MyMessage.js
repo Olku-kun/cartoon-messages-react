@@ -48,7 +48,7 @@ class MyMessage extends React.Component {
         return (
             <Container className="base">
 
-                shalom {selectedTemp.title}
+                shalom {selectedTemp.title}{this.props.stam}
                 <div>
                     <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} />
                     <div >
