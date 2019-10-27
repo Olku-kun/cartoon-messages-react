@@ -52,7 +52,7 @@ class MyMessage extends React.Component {
                 <div>
                     <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} />
                     <div >
-                        <textarea className="m-4"  rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="75" />
+                        <textarea className="m-4"  rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="120" />
                     </div>
 
                     <ButtonToolbar className ="d-flex justify-content-start">

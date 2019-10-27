@@ -24,7 +24,7 @@ class Canvas extends React.Component {
 
         ctx.drawImage(img, 0, 0);
         const maxWidth = 190;
-        const lineHeight = 20;
+        const lineHeight = 21;
         var x = parseInt(this.props.x);
         var y = parseInt(this.props.y);
 
@@ -64,6 +64,13 @@ class Canvas extends React.Component {
         const author = e.target.value;
         this.setState({author})
     }
+
+    handleSubmit = () => {
+        var canvas = this.canvas.current;
+        var image = canvas.toDataURL('image/jpg');
+
+    }
+
     render() {
 
         return (

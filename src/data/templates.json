@@ -3,41 +3,45 @@
         "src": "images/cartoon-Einstein.png",
         "title": "cartoon Einstein",
         "alt": "cartoon Einstein",
-        "x": 150,
-        "y": 40
+        "x": "200",
+        "y": "50"
     },
     
     {
         "src": "images/cartoon-angry-woman.png",
         "title": "cartoon angry woman",
         "alt": "cartoon angry woman",
-        "x": "200",
-        "y": "60"
+        "x": "180",
+        "y": "50"
     },
     {
         "src": "images/cartoon-man-with-gift-box.png",
         "title": "cartoon man with gift box",
         "alt": "cartoon man with gift box",
-        "x": "150",
-        "y": "40"
+        "x": "190",
+        "y": "50"
     },
     
     
     {
         "src": "images/ancient-Greek-philosopher.png",
         "title": "ancient Greek philosopher",
-        "alt": "ancient Greek philosopher"
+        "alt": "ancient Greek philosopher",
+        "x": "30",
+        "y": "50"
     },
     {
         "src": "images/ancient-greek-soldier.png",
         "title": "ancient Greek soldier",
-        "alt": "ancient Greek soldier"
+        "alt": "ancient Greek soldier",
+        "x": "20",
+        "y": "50"
     },
     {
         "src": "images/primitive-thinker.png",
         "title": "primitive thinker",
         "alt": "primitive thinker",
-        "x": "100",
-        "y": "60"
+        "x": "180",
+        "y": "50"
     }
 ]

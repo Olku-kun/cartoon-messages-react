@@ -8,17 +8,18 @@ import UserGallery from './pages/UserGallery';
 import Templates from './pages/Templates';
 import jsonTemplates from './data/templates';
 import MyMessage from './pages/MyMessage';
+import userImages from './data/userimages';
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       templates: jsonTemplates,
-      userImages: [],
+      userImages: userImages,
       newImages: {}
     }
   }
-  addUserImage = () => {
+  addUserImage = (image, username) => {
     const authorname = this.state.newImages.author;
     const imgData = this.state.newImages.image;
     const newPic = {
