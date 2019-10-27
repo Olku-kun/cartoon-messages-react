@@ -57,17 +57,20 @@ class Canvas extends React.Component {
         var canvas = this.canvas.current;
         var image = canvas.toDataURL('image/jpg');
         e.target.href = image;
-        console.log(image);
+        
         this.setState({ image });
     }
     handleChange = (e) => {
         const author = e.target.value;
-        this.setState({author})
+        this.setState({ author })
     }
 
     handleSubmit = () => {
         var canvas = this.canvas.current;
         var image = canvas.toDataURL('image/jpg');
+        var username = this.state.author;
+        this.props.addUserImage(image, username);
+        // console.log(image, username)
 
     }
 
@@ -80,10 +83,6 @@ class Canvas extends React.Component {
                         <canvas ref={this.canvas}
                             width={400}
                             height={400}
-                            onClick={e => {
-                                //temporary function to get coordinates
-                                console.log(e.clientX, e.clientY)
-                            }}
                         />
                         <img ref={this.image} src={this.props.imgSrc} alt="" style={{ display: 'none' }} />
                     </Col>

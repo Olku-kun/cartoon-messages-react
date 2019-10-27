@@ -11,10 +11,11 @@ class MyMessage extends React.Component {
             myTemplate: this.props.match.params.id,
             text: '',
             bubbleText: 'Your text here',
+            image: "",
+            username: undefined
 
         };
-        console.log(this.props.match.params.id);
-        console.log(this.state.templates)
+
     }
 
     handleInput = (e) => {
@@ -37,6 +38,10 @@ class MyMessage extends React.Component {
             bubbleText: ""
         })
     }
+    addUserImage = (image, username) => {
+
+        this.props.addUserImage(image, username);
+    }
     render() {
         const { myTemplate, templates } = this.state;
         let selectedTemp = templates.find((temp) => {
@@ -48,14 +53,14 @@ class MyMessage extends React.Component {
         return (
             <Container className="base">
 
-                shalom {selectedTemp.title}{this.props.stam}
+                shalom {selectedTemp.title}{this.state.username}
                 <div>
-                    <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} addUserImage = {this.addUserImage}/>
+                    <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} addUserImage={this.addUserImage} />
                     <div >
-                        <textarea className="m-4"  rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="120" />
+                        <textarea className="m-4" rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="120" />
                     </div>
 
-                    <ButtonToolbar className ="d-flex justify-content-start">
+                    <ButtonToolbar className="d-flex justify-content-start">
                         <Button className="m-2" variant="success" size="sm" onClick={this.handleClick} >
                             Submit
   </Button>
@@ -64,6 +69,7 @@ class MyMessage extends React.Component {
     </Button>
                     </ButtonToolbar>
                 </div>
+
             </Container>
         )
     }

@@ -16,17 +16,18 @@ class App extends React.Component {
     this.state = {
       templates: jsonTemplates,
       userImages: userImages,
-      newImages: {}
+      newImage: {}
     }
   }
   addUserImage = (image, username) => {
-    const authorname = this.state.newImages.author;
-    const imgData = this.state.newImages.image;
+     
     const newPic = {
-      author: authorname,
-      pic: imgData
+      author: username,
+      pic: image,
+      alt: ""
     }
-    this.setState({ newImages: this.newImages.concat(newPic) })
+    this.setState({ newImage: newPic })
+    console.log(this.state)
   }
 
   render() {
@@ -40,7 +41,7 @@ class App extends React.Component {
           <HomePage />
         </Route>
         <Route exact path="/gallery">
-          <UserGallery userImages={this.state.userImages} newImages = {this.state.newImages} />
+          <UserGallery userImages={this.state.userImages} newImage = {this.state.newImage} />
         </Route>
         <Route exact path="/templates">
           <Templates templates={this.state.templates} />
