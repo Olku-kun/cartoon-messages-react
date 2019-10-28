@@ -11,14 +11,14 @@
         "src": "images/cartoon-angry-woman.png",
         "title": "cartoon angry woman",
         "alt": "cartoon angry woman",
-        "x": "180",
+        "x": "200",
         "y": "50"
     },
     {
         "src": "images/cartoon-man-with-gift-box.png",
         "title": "cartoon man with gift box",
         "alt": "cartoon man with gift box",
-        "x": "190",
+        "x": "200",
         "y": "50"
     },
     
@@ -27,8 +27,8 @@
         "src": "images/ancient-Greek-philosopher.png",
         "title": "ancient Greek philosopher",
         "alt": "ancient Greek philosopher",
-        "x": "30",
-        "y": "50"
+        "x": "35",
+        "y": "55"
     },
     {
         "src": "images/ancient-greek-soldier.png",
@@ -42,14 +42,14 @@
         "src": "images/ancient-egyptian-pharaoh.png",
         "title": "ancient egyptian pharaoh",
         "alt": "ancient egyptian pharaoh",
-        "x": "180",
+        "x": "200",
         "y": "50"
     },
     {
         "src": "images/young-girl-nailing.png",
         "title": "young girl nailing",
         "alt": "young girl nailing",
-        "x": "180",
+        "x": "200",
         "y": "50"
     },
     {
@@ -70,8 +70,8 @@
         "src": "images/stone-age-woman-with-club.png",
         "title": "stone age woman with club",
         "alt": "stone age woman with club",
-        "x": "180",
-        "y": "50"
+        "x": "210",
+        "y": "80"
     },
     {
         "src": "images/primitive-thinker.png",

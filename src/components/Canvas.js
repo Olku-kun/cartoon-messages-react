@@ -31,7 +31,7 @@ class Canvas extends React.Component {
         var y = parseInt(this.props.y);
 
         ctx.fillStyle = "#333";
-        ctx.font = "24px Caveat";
+        ctx.font = "25px Caveat";
         const text = this.props.canvastext;
         this.wrapText(ctx, lineHeight, maxWidth, x, y, text);
     }

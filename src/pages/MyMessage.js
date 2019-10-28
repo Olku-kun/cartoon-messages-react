@@ -20,6 +20,7 @@ class MyMessage extends React.Component {
     }
 
     handleInput = (e) => {
+        
         var text = e.target.value;
 
         this.setState({ text: text })
@@ -56,14 +57,17 @@ class MyMessage extends React.Component {
                 <Row>
 
                     <Col sm={3}> 
-                    <ul><h4>Instuctions</h4>
-                        <li>Enter you message to the text box (limit 120 characters)</li>
+                    <ul><h4>Instructions</h4>
+                        <li>Enter you message to the text box (limit 80 characters)</li>
                         <li>Click submit button to add you message to the template</li>
-                        <li>Click download button or/and submit to gallery button</li>
+                        <li>Click download button to save your cartoon message</li>
+                        <li>Enter your nickname and submit submit your image to User Gallery</li>
                         
                     </ul>
-                    <span>{this.state.text.length}</span>
-                    <textarea className="m-2" rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="120" />
+                    <div>
+                    <span className="m-2" style = {{color: "gray"}}>Characters: {this.state.text.length}</span>
+                    </div>
+                    <textarea className="m-2" rows="3" cols="25" placeholder = "...type here" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="80" />
 
 
                         <ButtonToolbar className="d-flex justify-content-start">
