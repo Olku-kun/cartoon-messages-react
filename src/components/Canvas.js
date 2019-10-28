@@ -79,18 +79,21 @@ class Canvas extends React.Component {
         return (
             <Container>
                 <Row>
-                    <Col >
+                    <Col ><div>
                         <canvas ref={this.canvas}
                             width={400}
                             height={400}
                         />
+                        <a className="download-btn rounded" variant="secondary" download="image.jpg" href="#" onClick={this.downloadImg} crossOrigin="anonymous" alt="" >Download</a>
                         <img ref={this.image} src={this.props.imgSrc} alt="" style={{ display: 'none' }} />
+                        </div>
                     </Col>
                     <Col >
+                    <div className="">
                         <h4>Enter your name</h4>
                         <input type="text" placeholder="Anonymous" value={this.state.author} onChange={this.handleChange} />
                         <Button className="m-2" variant="success" size="lg" type="button" onClick={this.handleSubmit}>Submit to Gallery</Button>
-                        <a className=" mb-2" variant="secondary" download="image.jpg" href="#" onClick={this.downloadImg} crossOrigin="anonymous" alt="" ><h4>Download </h4></a>
+                       </div> 
 
                     </Col>
                 </Row>

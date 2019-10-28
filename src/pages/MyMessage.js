@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonToolbar, Container } from 'react-bootstrap';
+import { Button, ButtonToolbar, Container, Row, Col } from 'react-bootstrap';
 import jsonTemplates from '../data/templates';
 import Canvas from '../components/Canvas';
 
@@ -52,23 +52,30 @@ class MyMessage extends React.Component {
 
         return (
             <Container className="base">
+                <Row>
 
-                shalom {selectedTemp.title}{this.state.username}
-                <div>
-                    <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} addUserImage={this.addUserImage} />
-                    <div >
-                        <textarea className="m-4" rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="120" />
-                    </div>
+                    <Col sm={3}> 
+                    shalom {selectedTemp.title}{this.state.username}
+                    <textarea className="m-2" rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="120" />
 
-                    <ButtonToolbar className="d-flex justify-content-start">
-                        <Button className="m-2" variant="success" size="sm" onClick={this.handleClick} >
-                            Submit
+
+                        <ButtonToolbar className="d-flex justify-content-start">
+                            <Button className="m-2" variant="success" size="sm" onClick={this.handleClick} >
+                                Submit
   </Button>
-                        <Button className="m-2" variant="danger" size="sm" onClick={this.deleteMessage}>
-                            Clear
+                            <Button className="m-2" variant="danger" size="sm" onClick={this.deleteMessage}>
+                                Clear
     </Button>
-                    </ButtonToolbar>
-                </div>
+                        </ButtonToolbar></Col>
+
+                   
+                    <Col sm={9}>
+                    <div >
+                        <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} addUserImage={this.addUserImage} />
+                        </div>
+                    </Col>
+
+                </Row>
 
             </Container>
         )

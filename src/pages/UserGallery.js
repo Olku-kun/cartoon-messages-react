@@ -16,8 +16,8 @@ class UserGallery extends React.Component {
         return (
             
                 <Container className = "base">
-                    <p>{this.props.newImage.author}</p>
-                    <img src = {this.props.newImage.pic}/>
+                    <h4>{this.props.newImage.author}</h4>
+                    <img className = "gallery-img" src = {this.props.newImage.pic}/>
               <Row>{mypictures}</Row>
               
                 </Container>

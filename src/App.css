@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .base {
   min-height: 100vh;
@@ -10,8 +10,7 @@
   min-height: 10vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
+  margin-bottom: 30px;
   font-size: calc(10px + 1.5vmin);
   color: rgb(66, 65, 65);
 }
@@ -20,3 +19,21 @@
     width: 300px;
     height: 300px
   }
+  .download-btn {
+    background-color: SlateBlue;
+  color: white;
+  padding: 1.5em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 2em;
+  display:block;
+  text-align: center;
+  margin-left: auto;
+
+  }
+  .download-btn:hover {
+  background-color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
