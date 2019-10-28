@@ -62,6 +62,7 @@ class MyMessage extends React.Component {
                         <li>Click download button or/and submit to gallery button</li>
                         
                     </ul>
+                    <span>{this.state.text.length}</span>
                     <textarea className="m-2" rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="120" />
 
 

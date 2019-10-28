@@ -37,6 +37,42 @@
         "x": "20",
         "y": "50"
     },
+    
+    {
+        "src": "images/ancient-egyptian-pharaoh.png",
+        "title": "ancient egyptian pharaoh",
+        "alt": "ancient egyptian pharaoh",
+        "x": "180",
+        "y": "50"
+    },
+    {
+        "src": "images/young-girl-nailing.png",
+        "title": "young girl nailing",
+        "alt": "young girl nailing",
+        "x": "180",
+        "y": "50"
+    },
+    {
+        "src": "images/stepping-into-poo.png",
+        "title": "stepping into poo",
+        "alt": "stepping into poo",
+        "x": "20",
+        "y": "50"
+    },
+    {
+        "src": "images/queen-esther.png",
+        "title": "queen esther",
+        "alt": "queen esther",
+        "x": "180",
+        "y": "50"
+    },
+    {
+        "src": "images/stone-age-woman-with-club.png",
+        "title": "stone age woman with club",
+        "alt": "stone age woman with club",
+        "x": "180",
+        "y": "50"
+    },
     {
         "src": "images/primitive-thinker.png",
         "title": "primitive thinker",

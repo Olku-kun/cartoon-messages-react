@@ -14,7 +14,7 @@ class Templates extends React.Component {
         
         return (
             <Container className = "base">
-                <h2 className="text-center">Choose your template, click on image you liked.</h2>
+                <h2 className="text-center">Choose your template, click on the image you liked.</h2>
                 <Row>{tiles} </Row>
             </Container>
 
