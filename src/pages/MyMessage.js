@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, ButtonToolbar, Container, Row, Col } from 'react-bootstrap';
 import jsonTemplates from '../data/templates';
 import Canvas from '../components/Canvas';
+import { Redirect, } from 'react-router-dom';
 
 class MyMessage extends React.Component {
     constructor(props) {
@@ -55,7 +56,12 @@ class MyMessage extends React.Component {
                 <Row>
 
                     <Col sm={3}> 
-                    shalom {selectedTemp.title}{this.state.username}
+                    <ul><h4>Instuctions</h4>
+                        <li>Enter you message to the text box (limit 120 characters)</li>
+                        <li>Click submit button to add you message to the template</li>
+                        <li>Click download button or/and submit to gallery button</li>
+                        
+                    </ul>
                     <textarea className="m-2" rows="3" cols="25" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="120" />
 
 

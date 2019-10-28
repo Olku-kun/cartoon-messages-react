@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
+import { Redirect, } from 'react-router-dom';
 class Canvas extends React.Component {
     constructor(props) {
         super(props);
@@ -7,7 +8,8 @@ class Canvas extends React.Component {
         this.canvas = React.createRef();
         this.state = {
             author: "",
-            image: ""
+            image: "",
+            lgShow: false,
         }
         this.message = this.message.bind(this)
     }
@@ -57,7 +59,7 @@ class Canvas extends React.Component {
         var canvas = this.canvas.current;
         var image = canvas.toDataURL('image/jpg');
         e.target.href = image;
-        
+
         this.setState({ image });
     }
     handleChange = (e) => {
@@ -71,6 +73,7 @@ class Canvas extends React.Component {
         var username = this.state.author;
         this.props.addUserImage(image, username);
         // console.log(image, username)
+        this.setState({ LgShow: true })
 
     }
 
@@ -86,17 +89,26 @@ class Canvas extends React.Component {
                         />
                         <a className="download-btn rounded" variant="secondary" download="image.jpg" href="#" onClick={this.downloadImg} crossOrigin="anonymous" alt="" >Download</a>
                         <img ref={this.image} src={this.props.imgSrc} alt="" style={{ display: 'none' }} />
-                        </div>
+                    </div>
                     </Col>
                     <Col >
-                    <div className="">
-                        <h4>Enter your name</h4>
-                        <input type="text" placeholder="Anonymous" value={this.state.author} onChange={this.handleChange} />
-                        <Button className="m-2" variant="success" size="lg" type="button" onClick={this.handleSubmit}>Submit to Gallery</Button>
-                       </div> 
+                        <div className="submitting-block">
+                            <h4 className="m-3">Enter your name</h4>
+                            <input className="m-3" type="text" placeholder="Anonymous" value={this.state.author} onChange={this.handleChange} />
+                            <Button className="m-3" variant="success" size="lg" type="button" onClick={this.handleSubmit}>Submit to Gallery</Button>
+                        </div>
 
                     </Col>
                 </Row>
+                <Modal size="lg" show={this.state.LgShow} onHide={() => this.setState({LgShow: false})}
+                    aria-labelledby="example-modal-sizes-title-lg" >
+                    <Modal.Header closeButton>
+                        <Modal.Title id="example-modal-sizes-title-lg">
+                            Your Message was added to the User Gallery
+          </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body><a href = "gallery#/gallery">Go to the User Gallery</a></Modal.Body>
+                </Modal>
             </Container>
 
         )

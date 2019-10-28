@@ -6,7 +6,7 @@
   min-height: 100vh;
 }
 .myNavbar {
-  background-color: rgb(247, 235, 202);
+  background-color: PaleTurquoise;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -37,3 +37,10 @@
   text-transform: uppercase;
 }
 
+.submitting-block {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 100%;
+}
