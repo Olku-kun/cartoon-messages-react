@@ -65,7 +65,7 @@ class MyMessage extends React.Component {
                         </ul>
                         <div>
                             <h4 style = {{color: "tomato"}}>Type your message:</h4>
-                            <span className="m-2" style={{ color: "gray", fontSize: "0.7em" }}>Characters: {this.state.text.length}</span>
+                            <span className="m-2" style={{ color: "gray", fontSize: "0.7em" }}>Characters left: {85 - this.state.text.length}</span>
                         </div>
                         <textarea className="m-2" rows="3" cols="25" placeholder="...type here" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="85" />
 
