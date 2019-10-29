@@ -44,3 +44,16 @@
   /* justify-content: center; */
   height: 100%;
 }
+.username {
+  margin: 0;
+  text-align: center;
+  color: SlateBlue
+}
+.imagebox {
+  width: 300px;
+  margin: 8px
+}
+.mymodal {
+  background: LavenderBlush;
+  text-align: center
+}

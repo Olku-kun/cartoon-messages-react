@@ -12,12 +12,14 @@ class UserGallery extends React.Component {
     }
     render() {
         const {pictures} = this.state;
-        const mypictures = pictures.map((pic, i) => <Col  key = {i}  lg="4" md="6" sm="1"><h4>{pic.author}</h4><MyPicture picture={pic} /></Col>);
+        const mypictures = pictures.map((pic, i) => <Col  key = {i}  lg="4" md="6" sm="1"><div className = "imagebox"><h5 className = "username">By {pic.author}</h5><MyPicture picture={pic} /></div></Col>);
         return (
             
                 <Container className = "base">
-                    <h5>{this.props.newImage.author}</h5>
+                    <div className = "imagebox">
+                    <h5 className = "username">By {this.props.newImage.author}</h5>
                     <img className = "gallery-img" src = {this.props.newImage.pic}/>
+                    </div>
               <Row>{mypictures}</Row>
               
                 </Container>

@@ -63,7 +63,7 @@
         "src": "images/queen-esther.png",
         "title": "queen esther",
         "alt": "queen esther",
-        "x": "180",
+        "x": "200",
         "y": "50"
     },
     {
@@ -77,7 +77,7 @@
         "src": "images/primitive-thinker.png",
         "title": "primitive thinker",
         "alt": "primitive thinker",
-        "x": "180",
+        "x": "195",
         "y": "50"
     }
 ]

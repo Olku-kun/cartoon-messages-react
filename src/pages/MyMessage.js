@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, ButtonToolbar, Container, Row, Col } from 'react-bootstrap';
 import jsonTemplates from '../data/templates';
 import Canvas from '../components/Canvas';
-import { Redirect, } from 'react-router-dom';
+
 
 class MyMessage extends React.Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class MyMessage extends React.Component {
     }
 
     handleInput = (e) => {
-        
+
         var text = e.target.value;
 
         this.setState({ text: text })
@@ -56,18 +56,18 @@ class MyMessage extends React.Component {
             <Container className="base">
                 <Row>
 
-                    <Col sm={3}> 
-                    <ul><h4>Instructions</h4>
-                        <li>Enter you message to the text box (limit 80 characters)</li>
-                        <li>Click submit button to add you message to the template</li>
-                        <li>Click download button to save your cartoon message</li>
-                        <li>Enter your nickname and submit submit your image to User Gallery</li>
-                        
-                    </ul>
-                    <div>
-                    <span className="m-2" style = {{color: "gray"}}>Characters: {this.state.text.length}</span>
-                    </div>
-                    <textarea className="m-2" rows="3" cols="25" placeholder = "...type here" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="80" />
+                    <Col sm={3}>
+                        <ul><h4>Instructions</h4>
+                            <li>Enter you message to the text box (limit 85 characters)</li>
+                            <li>Click submit button to add you message to the template</li>
+                            <li>Click download button to save your cartoon message</li>
+                            <li>Enter your nickname and submit your image to User Gallery</li>
+                        </ul>
+                        <div>
+                            <h4 style = {{color: "tomato"}}>Type your message:</h4>
+                            <span className="m-2" style={{ color: "gray", fontSize: "0.7em" }}>Characters: {this.state.text.length}</span>
+                        </div>
+                        <textarea className="m-2" rows="3" cols="25" placeholder="...type here" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="85" />
 
 
                         <ButtonToolbar className="d-flex justify-content-start">
@@ -79,10 +79,10 @@ class MyMessage extends React.Component {
     </Button>
                         </ButtonToolbar></Col>
 
-                   
+
                     <Col sm={9}>
-                    <div >
-                        <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} addUserImage={this.addUserImage} />
+                        <div >
+                            <Canvas canvastext={this.state.bubbleText} x={selectedTemp.x} y={selectedTemp.y} imgSrc={selectedTemp.src} addUserImage={this.addUserImage} />
                         </div>
                     </Col>
 

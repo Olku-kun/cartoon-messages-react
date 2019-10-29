@@ -25,7 +25,7 @@ class Canvas extends React.Component {
         const ctx = canvas.getContext("2d");
 
         ctx.drawImage(img, 0, 0);
-        const maxWidth = 190;
+        const maxWidth = 180;
         const lineHeight = 21;
         var x = parseInt(this.props.x);
         var y = parseInt(this.props.y);
@@ -72,7 +72,6 @@ class Canvas extends React.Component {
         var image = canvas.toDataURL('image/jpg');
         var username = this.state.author;
         this.props.addUserImage(image, username);
-        // console.log(image, username)
         this.setState({ LgShow: true })
 
     }
@@ -100,14 +99,14 @@ class Canvas extends React.Component {
 
                     </Col>
                 </Row>
-                <Modal size="lg" show={this.state.LgShow} onHide={() => this.setState({LgShow: false})}
+                <Modal  size="lg" show={this.state.LgShow} onHide={() => this.setState({ LgShow: false })}
                     aria-labelledby="example-modal-sizes-title-lg" >
-                    <Modal.Header closeButton>
+                    <Modal.Header closeButton className = "mymodal">
                         <Modal.Title id="example-modal-sizes-title-lg">
                             Your Message was added to the User Gallery
           </Modal.Title>
                     </Modal.Header>
-                    <Modal.Body><a href = "gallery#/gallery">Go to the User Gallery</a></Modal.Body>
+                    <Modal.Body className = "mymodal"><a href="#/gallery">Go to the User Gallery</a></Modal.Body>
                 </Modal>
             </Container>
 
