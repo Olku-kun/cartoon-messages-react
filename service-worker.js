@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "olku-kun.github.io/cartoon-messages-react/precache-manifest.7822ef17a76bb13931ba15ad162643ed.js"
+  "Olku-kun.github.io/cartoon-messages-react/precache-manifest.9adc033b459b2850c4fb4e2fd97bdc04.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("olku-kun.github.io/cartoon-messages-react/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("Olku-kun.github.io/cartoon-messages-react/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
