@@ -28,7 +28,7 @@ class Tile extends React.Component {
             const template = this.props.template;
             return (
                 <div onClick={this.openMyMessage} id={template.title} className='m-2'>
-                    <img className = "gallery-img" src={template.src} title={template.title} alt={template.alt} />
+                    <img style = {{cursor: "pointer"}} className = "gallery-img" src={template.src} title={template.title} alt={template.alt} />
                 </div>
 
             )

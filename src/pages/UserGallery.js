@@ -1,5 +1,4 @@
 import React from 'react';
-import userImages from '../data/userimages';
 import {  Container, Col, Row } from 'react-bootstrap';
 import MyPicture from '../components/MyPicture';
 
@@ -18,7 +17,7 @@ class UserGallery extends React.Component {
                 <Container className = "base">
                     <div className = "imagebox">
                     <h5 className = "username">By {this.props.newImage.author}</h5>
-                    <img className = "gallery-img" src = {this.props.newImage.pic}/>
+                    <img className = "gallery-img" src = {this.props.newImage.pic} alt = ""/>
                     </div>
               <Row>{mypictures}</Row>
               

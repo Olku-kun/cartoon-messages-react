@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
-import { Redirect, } from 'react-router-dom';
+
 class Canvas extends React.Component {
     constructor(props) {
         super(props);
@@ -93,7 +93,7 @@ class Canvas extends React.Component {
                     <Col >
                         <div className="submitting-block">
                             <h4 className="m-3">Enter your name</h4>
-                            <input className="m-3" type="text" placeholder="Anonymous" value={this.state.author} onChange={this.handleChange} />
+                            <input className="m-3" type="text"  value={this.state.author} onChange={this.handleChange} />
                             <Button className="m-3" variant="success" size="lg" type="button" onClick={this.handleSubmit}>Submit to Gallery</Button>
                         </div>
 

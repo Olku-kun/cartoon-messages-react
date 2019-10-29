@@ -79,5 +79,12 @@
         "alt": "primitive thinker",
         "x": "195",
         "y": "50"
+    },
+    {
+        "src": "images/scared-boy.png",
+        "title": "scared boy",
+        "alt": "scared boy",
+        "x": "40",
+        "y": "55"
     }
 ]

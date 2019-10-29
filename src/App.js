@@ -20,18 +20,18 @@ class App extends React.Component {
     }
   }
   addUserImage = (image, username) => {
-     
+
     const newPic = {
       author: username,
       pic: image,
       alt: ""
     }
     this.setState({ newImage: newPic })
-    console.log(this.state)
+
   }
 
   render() {
-    console.log(this.state);
+
     return (
       <Container className="bg-light">
         <MyNavbar />
@@ -41,17 +41,14 @@ class App extends React.Component {
           <HomePage />
         </Route>
         <Route exact path="/gallery">
-          <UserGallery userImages={this.state.userImages} newImage = {this.state.newImage} />
+          <UserGallery userImages={this.state.userImages} newImage={this.state.newImage} />
         </Route>
         <Route exact path="/templates">
           <Templates templates={this.state.templates} />
         </Route>
-        {/* <Route exact path="/templates/:id"
-         component={MyMessage}
-          render={( match ) => (
-           match = { match }  ) } /> */}
-         <Route exact path="/templates/:id" render = {props => <MyMessage {...props} addUserImage = {this.addUserImage}/>} /> 
-         
+
+        <Route exact path="/templates/:id" render={props => <MyMessage {...props} addUserImage={this.addUserImage} />} />
+
 
 
 

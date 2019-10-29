@@ -1,12 +1,9 @@
-/* .App {
-  text-align: center;
-} */
 
 .base {
   min-height: 100vh;
 }
+
 .myNavbar {
-  background-color: PaleTurquoise;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -14,25 +11,35 @@
   font-size: calc(10px + 1.5vmin);
   color: rgb(66, 65, 65);
 }
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.steps>ol>li {
+  font-size: 1.2em;
+  padding: 8px;
+}
+.gallery-img {
 
-  .gallery-img {
-    cursor: pointer;
-    width: 300px;
-    height: 300px
-  }
-  .download-btn {
-    background-color: SlateBlue;
+  width: 300px;
+  height: 300px
+}
+
+.download-btn {
+  background-color: SlateBlue;
   color: white;
   padding: 1.5em 1.5em;
   text-decoration: none;
   text-transform: uppercase;
   margin-top: 2em;
-  display:block;
+  display: block;
   text-align: center;
   margin-left: auto;
+}
 
-  }
-  .download-btn:hover {
+.download-btn:hover {
   background-color: #555;
   text-decoration: none;
   text-transform: uppercase;
@@ -45,15 +52,19 @@
   /* justify-content: center; */
   height: 100%;
 }
+
 .username {
   margin: 0;
   text-align: center;
   color: SlateBlue
 }
+
 .imagebox {
-  width: 300px;
-  margin: 8px
+  width: 318px;
+  margin-bottom: 15px;
+  background:  rgb(241, 240, 255);
 }
+
 .mymodal {
   background: LavenderBlush;
   text-align: center
