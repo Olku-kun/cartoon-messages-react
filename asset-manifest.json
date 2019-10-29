@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/css/main.3f286ce6.chunk.css",
-    "main.js": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/js/main.b940be28.chunk.js",
-    "main.js.map": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/js/main.b940be28.chunk.js.map",
-    "runtime-main.js": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/js/runtime-main.4e2ba823.js",
-    "runtime-main.js.map": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/js/runtime-main.4e2ba823.js.map",
-    "static/css/2.0624914a.chunk.css": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/css/2.0624914a.chunk.css",
-    "static/js/2.7e01663d.chunk.js": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/js/2.7e01663d.chunk.js",
-    "static/js/2.7e01663d.chunk.js.map": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/js/2.7e01663d.chunk.js.map",
-    "index.html": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/index.html",
-    "precache-manifest.35e84666c1cabcd55cd3a28b4dec28ca.js": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/precache-manifest.35e84666c1cabcd55cd3a28b4dec28ca.js",
-    "service-worker.js": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/service-worker.js",
-    "static/css/2.0624914a.chunk.css.map": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.3f286ce6.chunk.css.map": "/cartoon-messages-reactnpm%20install%20--save%20gh-pages/static/css/main.3f286ce6.chunk.css.map"
+    "main.css": "/cartoon-messages-react/static/css/main.3f286ce6.chunk.css",
+    "main.js": "/cartoon-messages-react/static/js/main.53b7f420.chunk.js",
+    "main.js.map": "/cartoon-messages-react/static/js/main.53b7f420.chunk.js.map",
+    "runtime-main.js": "/cartoon-messages-react/static/js/runtime-main.09ebfc8b.js",
+    "runtime-main.js.map": "/cartoon-messages-react/static/js/runtime-main.09ebfc8b.js.map",
+    "static/css/2.0624914a.chunk.css": "/cartoon-messages-react/static/css/2.0624914a.chunk.css",
+    "static/js/2.7e01663d.chunk.js": "/cartoon-messages-react/static/js/2.7e01663d.chunk.js",
+    "static/js/2.7e01663d.chunk.js.map": "/cartoon-messages-react/static/js/2.7e01663d.chunk.js.map",
+    "index.html": "/cartoon-messages-react/index.html",
+    "precache-manifest.8671f83c5c63174c61e07f8ccb49c5f4.js": "/cartoon-messages-react/precache-manifest.8671f83c5c63174c61e07f8ccb49c5f4.js",
+    "service-worker.js": "/cartoon-messages-react/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/cartoon-messages-react/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.3f286ce6.chunk.css.map": "/cartoon-messages-react/static/css/main.3f286ce6.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e2ba823.js",
+    "static/js/runtime-main.09ebfc8b.js",
     "static/css/2.0624914a.chunk.css",
     "static/js/2.7e01663d.chunk.js",
     "static/css/main.3f286ce6.chunk.css",
-    "static/js/main.b940be28.chunk.js"
+    "static/js/main.53b7f420.chunk.js"
   ]
 }
