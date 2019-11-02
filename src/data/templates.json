@@ -86,5 +86,12 @@
         "alt": "scared boy",
         "x": "40",
         "y": "55"
+    },
+    {
+        "src": "images/primitive-girl-with-berries-basket.png",
+        "title": "primitive girl with flower basket",
+        "alt": "primitive girl with flower basket",
+        "x": "200",
+        "y": "50"
     }
 ]
