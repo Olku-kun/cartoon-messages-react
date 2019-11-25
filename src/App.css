@@ -69,3 +69,8 @@
   background: LavenderBlush;
   text-align: center
 }
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
