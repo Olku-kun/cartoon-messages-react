@@ -11,7 +11,7 @@
         "src": "images/cartoon-angry-woman.png",
         "title": "cartoon angry woman",
         "alt": "cartoon angry woman",
-        "x": "200",
+        "x": "190",
         "y": "50"
     },
     {
@@ -91,7 +91,7 @@
         "src": "images/primitive-girl-with-berries-basket.png",
         "title": "primitive girl with flower basket",
         "alt": "primitive girl with flower basket",
-        "x": "200",
+        "x": "190",
         "y": "50"
     }
 ]

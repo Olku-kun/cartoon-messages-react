@@ -58,16 +58,16 @@ class MyMessage extends React.Component {
 
                     <Col sm={3}>
                         <ul><h4>Instructions</h4>
-                            <li>Enter you message to the text box (limit 85 characters)</li>
+                            <li>Enter you message to the text box (limit 80 characters)</li>
                             <li>Click submit button to add you message to the template</li>
                             <li>Click download button to save your cartoon message</li>
                             <li>Enter your nickname and submit your image to User Gallery</li>
                         </ul>
                         <div>
                             <h4 style = {{color: "tomato"}}>Type your message:</h4>
-                            <span className="m-2" style={{ color: "gray", fontSize: "0.7em" }}>Characters left: {85 - this.state.text.length}</span>
+                            <span className="m-2" style={{ color: "gray", fontSize: "0.7em" }}>Characters left: {80 - this.state.text.length}</span>
                         </div>
-                        <textarea className="m-2" rows="3" cols="25" placeholder="...type here" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="85" />
+                        <textarea className="m-2" rows="3" cols="25" placeholder="...type here" onChange={this.handleInput} value={this.state.text} style={{ fontFamily: "Arial" }} maxLength="80" />
 
 
                         <ButtonToolbar className="d-flex justify-content-start">
