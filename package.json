@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://olku-kun.github.io/cartoon-messages-react",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
